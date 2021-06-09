@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-md-12">
+      <div class="content" style="margin-top:2px;text-align: center;font-family: century gothic;color: #AED6F1;background-color: #303F9F;padding: 0px;font-size: 40px;">Events 2020-21: List of Technical Fests/ Events</div>
+  </div>
+</div>
+<div class="container">
+    <div class="heading2">
+        <b>Technical Events:</b>
+        </div>
+        <br>
+        <div class="para">
+        <ul *ngFor="let x of events">
+          <li>{{x}}</li>
+        </ul>
+        </div>
+        <h2><b>Technical Fests in Tamil Nadu</b></h2>
+        <table class="table table-striped table-hover">
+        <tr>
+          <th>Start Date</th>
+          <th>Fest Name</th>
+          <th>Fest Type</th>
+          <th>College Name</th>
+          <th>City</th>
+        </tr>
+        <tr *ngFor="let x of event_table">
+          <td>{{x.date}}</td>
+          <td>{{x.fest}}</td>
+          <td>{{x.type}}</td>
+          <td>{{x.clg}}</td>
+          <td>{{x.city}}</td>
+        </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+<app-footer></app-footer>

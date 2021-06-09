@@ -1,0 +1,91 @@
+
+	<h1 style="text-align:center;">Registration Form</h1>
+	<div class="container">
+	<form>
+	<div class="row">
+
+      <div class="col-25">
+		First Name<br>
+	  </div>
+		
+	  <div class="col-75">
+		<input type = "text" name ="first name" placeholder="Enter your first name.."><br>
+	  </div>
+
+    </div>
+
+
+		<br>
+    <div class="row">
+
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+      </div>
+
+    </div>
+
+
+		<br>
+	<div class="row">
+
+      <div class="col-25">
+		<label>Email Address</label>
+		</div>
+
+		<div class="col-75">
+		<input type="text" name="email" placeholder="Enter your email address..">
+		 </div>
+
+    </div>
+		<br>
+	<div class="row">
+
+      <div class="col-25">	
+        <label>Phone Number</label>
+		</div>
+
+		<div class="col-75">
+		<input type="text" name="phone"  placeholder="Enter your phone no..">
+		 </div>
+
+    </div>
+		<br>
+	<div class="row">
+
+      <div class="col-25">	
+		<label for="address">Address</label>
+		</div>
+
+		<div class="col-75">
+		<textarea rows="3" cols="30" name="address" id="address" placeholder="Enter Your Address"></textarea><br>
+		</div>
+
+	</div>
+
+		<br>
+	<div class="row">
+        
+      <div class="col-25">
+		<label for="city">City:</label>
+		</div>
+		<div class="col-75">
+		<select name="city" id="city"  placeholder="Select your location">
+    <option *ngFor="let i of city">{{i}}</option>
+		</select><br>
+		</div>
+	</div>
+		<br>
+	<div class="row">
+		<div class="col-25">
+		<input type = "submit" value ="Submit">
+		</div>
+		<div class="col-75">
+		<input type="reset" value="Reset" style="float:right">
+	</div>
+	</div>
+    </form>
+    </div>

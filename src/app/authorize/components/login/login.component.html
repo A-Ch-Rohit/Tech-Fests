@@ -1,0 +1,42 @@
+
+	<h1 style="text-align:center;">Login</h1>
+	<div class="container">
+	<form>
+		<br>
+	<div class="row">
+      <div class="col-25">
+		<label>Email Address</label>
+		</div>
+
+		<div class="col-75">
+		<input type="text" name="email" class="form-control"  placeholder="Email address">
+		 </div>
+
+    </div>
+		<br>
+	<div class="row">
+
+      <div class="col-25">	
+        <label>Password</label>
+		</div>
+
+		<div class="col-75">
+		<input type="password" class="form-control"  name="password"  placeholder="Password">
+		 </div>
+
+    </div>
+		<br>
+    <div class="row">
+    <div class="col-25"></div>
+    <div class="col-75">
+          <a [routerLink]="['/reset-password']" >Forgot Password? </a><br><br>
+          <a [routerLink]="['/register']" >Sign Up </a>
+    </div>
+    </div>
+		<br>
+	<div class="row">
+		<input type = "submit" value ="Login" style="float:right">
+	</div>
+    </form>
+</div>
+    

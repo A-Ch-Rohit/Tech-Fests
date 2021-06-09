@@ -1,0 +1,148 @@
+<div id="demo" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="#"><img src="assets/Hack.png" alt="Hackathon" width="1100" height="300"></a>
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <a href="#"><img src="assets/WORKSHOP.jpg" alt="Workshop" width="1100" height="300"></a>
+        <div class="carousel-caption">
+          <h3>Workshop</h3>
+          <p></p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <a href="#"><img src="assets/Symposia.jpg" alt="Symposia" width="1100" height="300"></a>
+        <div class="carousel-caption">
+          <h3>Symposium</h3>
+          <p></p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+    </div>
+<br>
+<br>
+<div class="container">
+  <div class="box">
+      <div class="para" style="border: 2px solid #E0E0E0 ;">
+          <p class="lead">Sports and extra-curricular activities play a very important role in our life. Involving ourselves in these activities will freshen up our minds and reduces all our pressure.</p>
+          <p class="lead">These events and activities are most exciting part of campus life in the institutes where a student faces immense pressure. These larger than life college event not only helps students unwind, but also gives them exposure to manage such events successfully.</p>
+          <p class="lead">Here you will get to know the list of all the Events organized in Tamil Nadu.</p>
+          <p class="lead">We have written this for those who have recently taken and are planning to take admission in various colleges so that they must know some colleges too have a fantastic life.</p>
+          <p class="lead">But there are some events where a student from other college can participate and showcase their skills</p>
+      </div>
+  </div>
+<br>
+<br>
+<label> Enter your name:
+  <input [(ngModel)]='name'/>
+  </label>
+<br>
+<div class="container" style="width:100%;background-color:white">
+<div class="b1" style="width:100%; height:600px; padding:20px; text-align:center; border: 10px solid #787878">
+  <div class="b2" style="width:100%;; height:540px; padding:20px; text-align:center; border: 5px solid #787878">
+         <span style="font-size:50px; font-weight:bold">Certificate of Participation</span>
+         <br><br>
+         <span style="font-size:25px"><i>This is to certify that</i></span>
+         <br>
+         <span style="font-size:30px"><b>{{name}}</b></span><br/>
+         <span style="font-size:25px"><i>has participated in the events of</i></span> <br/>
+         <span style="font-size:30px">Tech Fests</span><br/>
+         <span style="font-size:20px">with score of <b>88.5%</b></span> <br/><br/>
+         <span style="font-size:25px"><i>dated</i></span><br>
+        <span style="font-size:30px">April 10,2021</span>
+  </div>
+  </div>
+</div>
+<br>
+<br>
+<p class="lead" style="font-size: 30px;font-family:verdana"><b>Want this certificate??</b></p>
+<p class="lead" style="font-size: 20px;"><b>It's EASY..Register, participate and get the certificate by clicking the below button</b></p>
+<button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-toggle="modal" data-target="#myModal" href="Level1Registraionform.html" title="Click To Register"target="_blank" style="background-color: #303F9F;color: #AED6F1;text-decoration: none;display: inline-block;padding: 21px 35px;">
+Register Now
+</button>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+<div class="modal-dialog modal-xl">
+  <div class="modal-content">
+  
+  <!-- Modal Header -->
+  <div class="modal-header">
+    <h4 class="modal-title">Registration Form</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+  </div>
+  
+  <!-- Modal body -->
+  <div class="modal-body">
+  <form>
+    <div class="mb-3 row">
+    <label for="fname" class="col-sm-2 col-form-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="lname" class="col-sm-2 col-form-label">Last Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="cno" class="col-sm-2 col-form-label">Contact Number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="cno" placeholder="Enter Contact Number">
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="staticEmail" placeholder="Enter Email">
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="Textarea" class="col-sm-2 col-form-label">Address</label>
+    <div class="col-sm-10">
+    <textarea class="form-control" id="Textarea" rows="3" placeholder="Enter Address"></textarea>
+    </div>
+    </div>
+    <div class="mb-3 row">
+    <label for="City" class="col-sm-2 col-form-label">City</label>
+    <div class="col-sm-10">
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option *ngFor="let y of city">{{y}}</option>
+        </select>
+    </div>
+  </div>
+    </form>
+  </div>
+  
+  <!-- Modal footer -->
+  <div class="modal-footer">
+    <div class="d-grid gap-2">
+      <button class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+      <button class="btn btn-primary" type="submit" style="background-color: #303F9F;">Submit</button>
+      
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<app-footer></app-footer>
